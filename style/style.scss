@@ -6,20 +6,18 @@
     text-align: center;
     margin-bottom: 15px;
   }
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
 
 // Primary Text
 $primaryTextVeryDarkBlue : hsl(238, 29%, 16%);
 $primaryTextSoftRed : hsl(14, 88%, 65%);
-
 $BackgroundGradient : linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat ;
 
 // Text 
 $textVeryDarkGrayishBlue : hsl(237, 12%, 33%);
 $textDarkGrayishBlue: hsl(240, 6%, 50%);
-
 $dividers : hsl(240, 5%, 91%);
 
 * {
@@ -61,8 +59,6 @@ main {
     margin-left: 7%;
 }
 
-
-
 .question {
     border-bottom: 1px solid $dividers;
     height: 50px;
@@ -86,18 +82,22 @@ main {
     }
 }
 
-.active {
-    h2 {
-        color: $primaryTextVeryDarkBlue;
-        font-weight: 700;
-    }
-    p {
-        display: contents;
-    }
-    .arrow {
-        transform: rotate(180deg);
-    }
-}
+// .active {
+//     h2 {
+//         background: brown;
+//     }
+
+    // h2 {
+    //     color: $primaryTextVeryDarkBlue;
+    //     font-weight: 700;
+    // }
+    // p {
+    //     display: contents;
+    // }
+    // .arrow {
+    //     transform: rotate(180deg);
+    // }
+// }
 
 .image {
     background: url(../style/images/illustration-woman-online-mobile.svg);
