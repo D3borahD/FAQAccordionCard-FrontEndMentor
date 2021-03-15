@@ -1,1 +1,127 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 12px;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat;
+  background: linear-gradient(#af67e9, #6565e7) no-repeat;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Kumbh Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main {
+  background: white;
+  border-radius: 25px;
+  height: 70%;
+  width: 85%;
+  bottom: -20%;
+  position: relative;
+  -webkit-box-shadow: 0px 10px 100px #60169c;
+          box-shadow: 0px 10px 100px #60169c;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 150px;
+}
+
+.faq {
+  width: 85%;
+  margin-top: 30px;
+  margin-left: 7%;
+}
+
+.question {
+  border-bottom: 1px solid #e7e7e9;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.question h2 {
+  margin-top: 5px;
+  color: #4a4b5e;
+  font-weight: 400;
+}
+
+.question p {
+  display: none;
+  width: 100%;
+  color: #787887;
+}
+
+.question .arrow {
+  background: url(/style/images/icon-arrow-down.svg);
+  width: 10px;
+  height: 7px;
+}
+
+.active h2 {
+  color: #1d1e35;
+  font-weight: 700;
+}
+
+.active p {
+  display: contents;
+}
+
+.active .arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.image {
+  background: url(../style/images/illustration-woman-online-mobile.svg);
+  height: 196px;
+  width: 266px;
+  position: absolute;
+  top: -20%;
+  left: 10px;
+}
+
+.shadow {
+  background: url(../style/images/bg-pattern-mobile.svg);
+  width: 240px;
+  height: 104px;
+  position: absolute;
+  left: 35px;
+  top: -.5%;
+}
+/*# sourceMappingURL=style.css.map */
