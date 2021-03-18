@@ -47,14 +47,30 @@ main {
   bottom: -20%;
   position: relative;
   box-shadow: 0px 10px 100px hsl(273, 75%, 35%);
+  .header__image {
+    background: url(../style/images/illustration-woman-online-mobile.svg);
+    height: 196px;
+    width: 266px;
+    position: absolute;
+    top: -23%;
+    left: 10px;
+  }
+  .header__shadow {
+    background: url(../style/images/bg-pattern-mobile.svg);
+    width: 240px;
+    height: 104px;
+    position: absolute;
+    left: 35px;
+    top: -0.5%;
+  }
   h1 {
     text-align: center;
     font-size: 2.5em;
-    margin-top: 150px;
+    margin-top: 125px;
   }
 }
 
-.faq {
+.bloc__faq {
   width: 85%;
   margin-top: 30px;
   margin-left: 7%;
@@ -67,56 +83,39 @@ main {
   h2 {
     color: $textVeryDarkGrayishBlue;
     font-weight: 400;
+    cursor: pointer;
     position: absolute;
-
     top: 50%;
     transform: translateY(-50%);
   }
   p {
     display: none;
     color: $textDarkGrayishBlue;
+    width: 10%;
   }
-  .arrow {
+  .btn__arrow {
     background: url(/style/images/icon-arrow-down.svg);
     width: 10px;
     height: 7px;
     position: absolute;
+    cursor: pointer;
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-    // &:active {
-    //   transform: rotate(180deg);
-    // }
   }
 }
 
-.active {
+//BREAK POINT
+.accordion.active {
   h2 {
     color: $primaryTextVeryDarkBlue;
     font-size: 700;
   }
-  .arrow {
+  .btn__arrow {
     transform: rotate(180deg);
   }
   P {
     display: contents;
     margin-bottom: 10px;
   }
-}
-
-.image {
-  background: url(../style/images/illustration-woman-online-mobile.svg);
-  height: 196px;
-  width: 266px;
-  position: absolute;
-  top: -20%;
-  left: 10px;
-}
-.shadow {
-  background: url(../style/images/bg-pattern-mobile.svg);
-  width: 240px;
-  height: 104px;
-  position: absolute;
-  left: 35px;
-  top: -0.5%;
 }

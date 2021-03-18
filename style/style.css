@@ -49,13 +49,31 @@ main {
           box-shadow: 0px 10px 100px #60169c;
 }
 
+main .header__image {
+  background: url(../style/images/illustration-woman-online-mobile.svg);
+  height: 196px;
+  width: 266px;
+  position: absolute;
+  top: -23%;
+  left: 10px;
+}
+
+main .header__shadow {
+  background: url(../style/images/bg-pattern-mobile.svg);
+  width: 240px;
+  height: 104px;
+  position: absolute;
+  left: 35px;
+  top: -0.5%;
+}
+
 main h1 {
   text-align: center;
   font-size: 2.5em;
-  margin-top: 150px;
+  margin-top: 125px;
 }
 
-.faq {
+.bloc__faq {
   width: 85%;
   margin-top: 30px;
   margin-left: 7%;
@@ -70,6 +88,7 @@ main h1 {
 .accordion h2 {
   color: #4a4b5e;
   font-weight: 400;
+  cursor: pointer;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -79,49 +98,33 @@ main h1 {
 .accordion p {
   display: none;
   color: #787887;
+  width: 10%;
 }
 
-.accordion .arrow {
+.accordion .btn__arrow {
   background: url(/style/images/icon-arrow-down.svg);
   width: 10px;
   height: 7px;
   position: absolute;
+  cursor: pointer;
   right: 5px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
-.active h2 {
+.accordion.active h2 {
   color: #1d1e35;
   font-size: 700;
 }
 
-.active .arrow {
+.accordion.active .btn__arrow {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.active P {
+.accordion.active P {
   display: contents;
   margin-bottom: 10px;
-}
-
-.image {
-  background: url(../style/images/illustration-woman-online-mobile.svg);
-  height: 196px;
-  width: 266px;
-  position: absolute;
-  top: -20%;
-  left: 10px;
-}
-
-.shadow {
-  background: url(../style/images/bg-pattern-mobile.svg);
-  width: 240px;
-  height: 104px;
-  position: absolute;
-  left: 35px;
-  top: -0.5%;
 }
 /*# sourceMappingURL=style.css.map */
