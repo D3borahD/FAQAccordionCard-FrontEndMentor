@@ -38,6 +38,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+// .header__box--desktop {
+//   display: none;
+// }
 
 main {
   background: white;
@@ -63,6 +66,7 @@ main {
     left: 35px;
     top: -0.5%;
   }
+
   h1 {
     text-align: center;
     font-size: 2.5em;
@@ -72,8 +76,7 @@ main {
 
 .bloc__faq {
   width: 85%;
-  height: 300px;
-  margin-top: 15px;
+  height: 450px;
   margin-left: 7%;
   overflow: hidden;
 }
@@ -85,7 +88,6 @@ main {
   text-align: left;
   outline: none;
   transition: all 0.4s;
-
   h2 {
     color: $textVeryDarkGrayishBlue;
     font-weight: 400;
