@@ -53,38 +53,39 @@ main {
     margin-top: 150px;
   }
 }
-.close {
-  p {
-    visibility: hidden;
-  }
-}
+
 .faq {
   width: 85%;
   margin-top: 30px;
   margin-left: 7%;
 }
 
-.question {
+.accordionItem {
   border-bottom: 1px solid $dividers;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  height: 45px;
+  position: relative;
   h2 {
-    margin: 5px;
     color: $textVeryDarkGrayishBlue;
     font-weight: 400;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   p {
     display: none;
-
     color: $textDarkGrayishBlue;
   }
   .arrow {
     background: url(/style/images/icon-arrow-down.svg);
     width: 10px;
     height: 7px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    &:active {
+      transform: rotate(180deg);
+    }
   }
 }
 
