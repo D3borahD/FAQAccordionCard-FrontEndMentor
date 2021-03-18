@@ -120,9 +120,7 @@ main h1 {
   position: absolute;
   cursor: pointer;
   right: 5px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 15px;
 }
 
 .active.accordion h2 {
