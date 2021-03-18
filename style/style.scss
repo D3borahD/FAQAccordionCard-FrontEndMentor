@@ -60,7 +60,7 @@ main {
   margin-left: 7%;
 }
 
-.accordionItem {
+.accordion {
   border-bottom: 1px solid $dividers;
   height: 45px;
   position: relative;
@@ -68,6 +68,7 @@ main {
     color: $textVeryDarkGrayishBlue;
     font-weight: 400;
     position: absolute;
+
     top: 50%;
     transform: translateY(-50%);
   }
@@ -83,9 +84,9 @@ main {
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-    &:active {
-      transform: rotate(180deg);
-    }
+    // &:active {
+    //   transform: rotate(180deg);
+    // }
   }
 }
 
