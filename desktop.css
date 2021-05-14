@@ -2,34 +2,36 @@
   main {
     height: 500px;
     width: 65%;
-    overflow: hidden;
+    position: relative;
   }
   main::after {
-    background: url(../style/images/illustration-box-desktop.svg);
+    position: absolute;
+    content: url(../style/images/illustration-box-desktop.svg);
     width: 191px;
     height: 184px;
+    position: absolute;
+    left: -90px;
+    top: 210px;
   }
-  .header .header__image {
+  .container {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .container .header .header__image {
     background: url(../style/images/illustration-woman-online-desktop.svg);
     width: 472px;
     height: 359px;
     top: 80px;
     left: -75px;
   }
-  .header .header__shadow {
+  .container .header .header__shadow {
     background: url(../style/images/bg-pattern-desktop.svg);
     width: 966px;
     height: 945px;
     top: -280px;
     left: -570px;
-  }
-  .header::after {
-    content: url(../style/images/illustration-box-desktop.svg);
-    width: 191px;
-    height: 184px;
-    position: absolute;
-    left: -90px;
-    top: 200px;
   }
   .bloc__faq {
     width: 40%;
