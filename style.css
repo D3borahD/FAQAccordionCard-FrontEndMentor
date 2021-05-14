@@ -50,7 +50,7 @@ main {
 }
 
 main .header__image {
-  background: url(../style/images/illustration-woman-online-mobile.svg);
+  background: url("style/images/illustration-woman-online-mobile.svg");
   height: 196px;
   width: 266px;
   position: absolute;
@@ -59,7 +59,7 @@ main .header__image {
 }
 
 main .header__shadow {
-  background: url(../style/images/bg-pattern-mobile.svg);
+  background: url("style/images/bg-pattern-mobile.svg");
   width: 240px;
   height: 104px;
   position: absolute;
@@ -113,7 +113,7 @@ main h1 {
 }
 
 .accordion .btn__arrow {
-  background: url(/style/images/icon-arrow-down.svg);
+  background: url("style/images/icon-arrow-down.svg");
   width: 10px;
   height: 7px;
   position: absolute;

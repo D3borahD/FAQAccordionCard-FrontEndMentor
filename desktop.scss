@@ -7,7 +7,7 @@ $primaryTextSoftRed: hsl(14, 88%, 65%);
     position: relative;
     &::after {
       position: absolute;
-      content: url(../style/images/illustration-box-desktop.svg);
+      content: url("style/images/illustration-box-desktop.svg");
       width: 191px;
       height: 184px;
       position: absolute;
@@ -24,14 +24,14 @@ $primaryTextSoftRed: hsl(14, 88%, 65%);
 
     .header {
       .header__image {
-        background: url(../style/images/illustration-woman-online-desktop.svg);
+        background: url("style/images/illustration-woman-online-desktop.svg");
         width: 472px;
         height: 359px;
         top: 80px;
         left: -75px;
       }
       .header__shadow {
-        background: url(../style/images/bg-pattern-desktop.svg);
+        background: url("style/images/bg-pattern-desktop.svg");
         width: 966px;
         height: 945px;
         top: -280px;
