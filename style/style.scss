@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+// FrontEnd Mentor Rules//
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+// Primary Text
+$primaryTextVeryDarkBlue: hsl(238, 29%, 16%);
+$primaryTextSoftRed: hsl(14, 88%, 65%);
+$BackgroundGradient: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%))
+  no-repeat;
+
+// Text
+$textVeryDarkGrayishBlue: hsl(237, 12%, 33%);
+$textDarkGrayishBlue: hsl(240, 6%, 50%);
+$dividers: hsl(240, 5%, 91%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+body {
+  background: $BackgroundGradient;
+  height: 100vh;
+  width: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  background: white;
+  border-radius: 25px;
+  height: 70%;
+  width: 85%;
+  bottom: -20%;
+  position: relative;
+  box-shadow: 0px 10px 100px hsl(273, 75%, 35%);
+  .header__image {
+    background: url("images/illustration-woman-online-mobile.svg");
+    height: 196px;
+    width: 266px;
+    position: absolute;
+    top: -23%;
+    left: 10px;
+  }
+  .header__shadow {
+    background: url("images/bg-pattern-mobile.svg");
+    width: 240px;
+    height: 104px;
+    position: absolute;
+    left: 35px;
+    top: -0.5%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 125px;
+  }
+}
+
+.bloc__faq {
+  width: 85%;
+  height: 450px;
+  margin-left: 7%;
+  overflow: hidden;
+}
+.accordion {
+  border-bottom: 1px solid $dividers;
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+  text-align: left;
+  outline: none;
+  transition: all 0.4s;
+  h2 {
+    color: $textVeryDarkGrayishBlue;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .answer {
+    width: 90%;
+    overflow: scroll;
+  }
+  p {
+    display: none;
+    overflow: hidden;
+  }
+  .btn__arrow {
+    background: url("images/icon-arrow-down.svg");
+    width: 10px;
+    height: 7px;
+    position: absolute;
+    cursor: pointer;
+    right: 5px;
+    top: 15px;
+  }
+}
+
+.active.accordion {
+  h2 {
+    color: $primaryTextVeryDarkBlue;
+    font-size: 700;
+  }
+  .btn__arrow {
+    transform: rotate(180deg);
+  }
+
+  P {
+    display: contents;
+    color: $textDarkGrayishBlue;
+    line-height: 1.5em;
+  }
+}
